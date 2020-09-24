@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.applicant.ApplicantController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Text layoutX="24.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Welcome to the user page"
+                      wrappingWidth="392.6455078125">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Text>
+                <Button layoutX="24.0" layoutY="156.0" mnemonicParsing="false" onAction="#displayPosting"
+                        prefHeight="27.0"
+                        prefWidth="116.0" text="Browse Posting"/>
+                <Button layoutX="24.0" layoutY="112.0" mnemonicParsing="false" onAction="#viewProfile" prefHeight="27.0"
+                        prefWidth="116.0" text="My Files"/>
+                <Button layoutX="24.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewMyApplication"
+                        prefHeight="27.0" prefWidth="116.0" text="My Applications"/>
+                <Button layoutX="24.0" layoutY="245.0" mnemonicParsing="false" onAction="#viewMyInbox" prefHeight="27.0"
+                        prefWidth="116.0" text="My inbox"/>
+                <AnchorPane fx:id="displayPane" layoutX="170.0" layoutY="76.0" prefHeight="303.0" prefWidth="442.0"/>
+                <Button layoutX="24.0" layoutY="291.0" mnemonicParsing="false" onAction="#signOut" prefHeight="27.0"
+                        prefWidth="116.0" text="Sign out"/>
+                <Text fx:id="displayTitleText" layoutX="44.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      wrappingWidth="233.716796875">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0"
+            prefWidth="505.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.applicant.ApplyController">
+    <children>
+        <Text layoutX="28.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Select your CV and coverletter:">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Text>
+        <Button defaultButton="true" layoutX="115.0" layoutY="375.0" mnemonicParsing="false" onAction="#apply"
+                prefHeight="27.0" prefWidth="91.0" text="Apply"/>
+        <Button fx:id="ExitButton" defaultButton="true" layoutX="285.0" layoutY="375.0" mnemonicParsing="false"
+                onAction="#exit" prefHeight="27.0" prefWidth="91.0" text="Exit"/>
+        <ChoiceBox fx:id="cvChoiceBox" layoutX="28.0" layoutY="93.0" prefWidth="150.0"/>
+        <ChoiceBox fx:id="coverLetterChoiceBox" layoutX="238.0" layoutY="93.0" prefWidth="150.0"/>
+        <Text layoutX="28.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVs:"/>
+        <Text layoutX="238.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coverletters:"/>
+        <ListView fx:id="referenceListView" layoutX="20.0" layoutY="208.0" prefHeight="136.0" prefWidth="257.0"/>
+        <Text layoutX="28.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Enter the email addresses for your professional references:">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="emailAddressTextField" layoutX="293.0" layoutY="230.0" promptText="Enter email here"/>
+        <Button defaultButton="true" layoutX="399.0" layoutY="285.0" mnemonicParsing="false"
+                onAction="#AddEmailAddress" prefHeight="27.0" prefWidth="60.0" text="Add"/>
+        <Text layoutX="28.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For this posting, ">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Text>
+        <Text fx:id="numberText" layoutX="164.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              wrappingWidth="28.7294921875">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="187.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="references are required."
+              wrappingWidth="207.0">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Text>
+        <Label fx:id="incorrectNotice" layoutX="291.0" layoutY="200.0" prefHeight="17.0" prefWidth="207.0"/>
+    </children>
+</AnchorPane>

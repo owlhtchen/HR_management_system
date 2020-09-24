@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="432.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.coordinator.CoordinatorCheckPostsController">
+    <children>
+        <TableView fx:id="postTable" layoutX="14.0" layoutY="37.0" prefHeight="300.0" prefWidth="360.0">
+        </TableView>
+        <Button layoutX="525.0" layoutY="396.0" mnemonicParsing="false" onAction="#back" text="Back" />
+        <Label fx:id="info" layoutX="14.0" layoutY="14.0" text="Info" />
+        <Label fx:id="postNote" layoutX="14.0" layoutY="339.0" prefHeight="17.0" prefWidth="350.0"/>
+        <Button layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#postDetail" text="Post Detail" />
+        <Label fx:id="content" layoutX="385.0" layoutY="37.0" text="Content:" />
+        <TableView fx:id="applicationTable" layoutX="385.0" layoutY="176.0" prefHeight="161.0" prefWidth="200.0" />
+        <Label fx:id="applications" layoutX="385.0" layoutY="152.0" text="Applications under Post #" />
+        <Button layoutX="375.0" layoutY="361.0" mnemonicParsing="false" onAction="#applicationDetail" text="Application Detail" />
+        <Button layoutX="122.0" layoutY="359.0" mnemonicParsing="false" onAction="#modifyPost" text="Modify Post" />
+        <Label fx:id="appNote" layoutX="385.0" layoutY="339.0" />
+      <Button layoutX="373.0" layoutY="396.0" mnemonicParsing="false" onAction="#deleteApplication" text="Delete Application" />
+    </children>
+</AnchorPane>

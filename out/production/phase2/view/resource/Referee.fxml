@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.referee.RefereeController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Text layoutX="24.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, "
+                      wrappingWidth="116.0">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Text>
+                <Text fx:id="nameField" layoutX="128.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="email" wrappingWidth="298.0">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Button layoutX="29.0" layoutY="95.0" mnemonicParsing="false" onAction="#browseIncomplete" prefHeight="43.0"
+                prefWidth="192.0" text="Incomplete Applications">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+        <Button layoutX="29.0" layoutY="306.0" mnemonicParsing="false" onAction="#signOut" prefHeight="43.0"
+                prefWidth="192.0" text="Sign Out">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+        <Button layoutX="29.0" layoutY="236.0" mnemonicParsing="false" onAction="#viewInbox" prefHeight="43.0"
+                prefWidth="192.0" text="My Inbox">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+        <Button layoutX="29.0" layoutY="165.0" mnemonicParsing="false" onAction="#browseComplete" prefHeight="43.0"
+                prefWidth="192.0" text="Complete Applications">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+        <Text fx:id="tableTitle" layoutX="254.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Title of the table:" wrappingWidth="322.0">
+            <font>
+                <Font size="19.0"/>
+            </font>
+        </Text>
+        <TableView fx:id="applicationTable" layoutX="254.0" layoutY="100.0" prefHeight="250.0" prefWidth="339.0"/>
+        <Text fx:id="note" layoutX="348.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              wrappingWidth="163.2060546875"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="476.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.interviewer.InterviewerController">
+    <children>
+        <Button layoutX="14.0" layoutY="94.0" mnemonicParsing="false" onAction="#showIncompleteInterviews"
+                text="Incomplete Interviews"/>
+        <Button layoutX="14.0" layoutY="158.0" mnemonicParsing="false" onAction="#showInterviewHistory"
+                prefHeight="27.0" prefWidth="153.0" text="Interview History"/>
+        <Button layoutX="14.0" layoutY="273.0" mnemonicParsing="false" onAction="#signOut" prefHeight="27.0" prefWidth="153.0" text="Sign Out" />
+        <Label layoutX="122.0" layoutY="16.0" prefHeight="38.0" prefWidth="322.0" text="Select an interview and click more info button" />
+        <TableView fx:id="interviewDate" layoutX="202.0" layoutY="49.0" onMouseClicked="#getInterviewDetail" prefHeight="339.0" prefWidth="201.0">
+            <columns>
+                <TableColumn fx:id="interviewType" prefWidth="88.0" text="Type" />
+                <TableColumn fx:id="interviewDateCol" prefWidth="111.0" text="Interview Date" />
+            </columns></TableView>
+        <Button fx:id="unRecommendBtn" layoutX="566.0" layoutY="399.0" mnemonicParsing="false" onAction="#unRecommendApplication" text="Unrecommend Application" />
+        <Button fx:id="recommendBtn" layoutX="386.0" layoutY="399.0" mnemonicParsing="false" onAction="#recommendApplication" text="Recommend Application" />
+        <Text layoutX="612.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double click to see applicant info" wrappingWidth="97.0" />
+        <Text fx:id="applicationInfoLabel" layoutX="400.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Interview complete/incomplete here" wrappingWidth="353.0" />
+        <Label layoutX="422.0" layoutY="35.0" prefHeight="17.0" prefWidth="213.0" text="Application Info">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <VBox fx:id="vboxPane" layoutX="410.0" layoutY="68.0" prefHeight="294.0" prefWidth="190.0" />
+        <Button layoutX="14.0" layoutY="215.0" mnemonicParsing="false" onAction="#showMailbox" prefHeight="27.0" prefWidth="153.0" text="Open Mailbox" />
+        <AnchorPane layoutX="617.0" layoutY="238.0" prefHeight="144.0" prefWidth="116.0">
+            <children>
+                <Button fx:id="scoreBtn" layoutX="11.0" layoutY="35.0" mnemonicParsing="false" onAction="#setScore" prefHeight="27.0" prefWidth="88.0" text="Set Score" />
+            <Text fx:id="scorePrompt" layoutX="17.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score is between 0 and 100" wrappingWidth="63.0" />
+            </children>
+        </AnchorPane>
+      <Label layoutX="4.0" layoutY="394.0" prefHeight="38.0" prefWidth="373.0" text="* Quiz interview doesn't have an Interview Date." />
+          <TextField fx:id="score" layoutX="602.0" layoutY="188.0" prefHeight="25.0" prefWidth="116.0" />
+      <Label layoutX="16.0" layoutY="413.0" prefHeight="38.0" prefWidth="373.0" text="It's only given a score" />
+    </children>
+</AnchorPane>

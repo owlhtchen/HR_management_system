@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="336.0" prefWidth="307.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.coordinator.ViewQuizInterviewController">
+    <children>
+        <Button layoutX="221.0" layoutY="286.0" mnemonicParsing="false" onAction="#back" text="back"/>
+        <Button fx:id="hireButton" layoutX="84.0" layoutY="286.0" mnemonicParsing="false" onAction="#hire" text="hire" />
+      <TableView fx:id="resultTable" layoutX="54.0" layoutY="36.0" prefHeight="225.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="applicantColumn" prefWidth="96.66672134399414" text="Applicant" />
+          <TableColumn fx:id="gradeColumn" prefWidth="101.33332824707031" text="Grade" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

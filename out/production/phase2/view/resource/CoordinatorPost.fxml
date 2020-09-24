@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.coordinator.CoordinatorPostController">
+    <children>
+        <TextArea fx:id="contentField" layoutX="14.0" layoutY="50.0" prefHeight="167.0" prefWidth="573.0" promptText="Content; please press Enter when line hits the right bound" />
+        <TextField fx:id="titleField" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="573.0" promptText="Title" />
+        <TextField fx:id="employeeNum" layoutX="14.0" layoutY="289.0" prefHeight="27.0" prefWidth="219.0" promptText="# of Employee needed; Integer" />
+        <Button layoutX="538.0" layoutY="359.0" mnemonicParsing="false" onAction="#backCoordinator" text="Back"/>
+        <Button fx:id="post" layoutX="482.0" layoutY="359.0" mnemonicParsing="false" onAction="#post" text="Post"/>
+        <Label fx:id="note" alignment="CENTER_RIGHT" layoutX="247.0" layoutY="328.0" prefHeight="17.0" prefWidth="329.0" />
+        <Label fx:id="today" layoutX="14.0" layoutY="224.0" prefHeight="17.0" prefWidth="294.0" text="Date Posted:" />
+        <TextField fx:id="refDeadline" layoutX="14.0" layoutY="359.0" prefHeight="27.0" prefWidth="219.0" promptText="Reference Deadline; MM/dd/yyyy" />
+        <TextField fx:id="refNum" layoutX="14.0" layoutY="323.0" prefHeight="27.0" prefWidth="219.0" promptText="# of Reference needed; Integer" />
+        <Button layoutX="482.0" layoutY="289.0" mnemonicParsing="false"
+                onAction="#setInterview" text="Set Interviews"/>
+        <Button layoutX="482.0" layoutY="250.0" mnemonicParsing="false" onAction="#setTags"
+                prefHeight="27.0" prefWidth="105.0" text="Set Tags"/>
+      <TextField fx:id="dateClosedField" layoutX="14.0" layoutY="250.0" prefHeight="27.0" prefWidth="219.0" promptText="Date Closed; MM/dd/yyyy" />
+    </children>
+</AnchorPane>

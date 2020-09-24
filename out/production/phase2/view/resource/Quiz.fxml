@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.coordinator.QuizController">
+   <children>
+      <ChoiceBox fx:id="InterviewerChoiceBox" layoutX="166.0" layoutY="112.0" prefWidth="150.0" />
+      <Text layoutX="143.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Interviewer In Charge:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button defaultButton="true" layoutX="97.0" layoutY="239.0" mnemonicParsing="false" onAction="#createInterview"
+              text="Create Interview"/>
+      <Button fx:id="cancelButton" defaultButton="true" layoutX="268.0" layoutY="239.0" mnemonicParsing="false" onAction="#cancel" prefHeight="27.0" prefWidth="119.0" text="Cancel" />
+      <Text layoutX="173.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take Home Quiz:" wrappingWidth="184.57861328125">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select number of interviewees that moves to next round">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="numEmployeePassed" layoutX="166.0" layoutY="192.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

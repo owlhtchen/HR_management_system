@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="422.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+    <children>
+        <Button layoutX="77.0" layoutY="366.0" mnemonicParsing="false" onAction="#signUp" text="Sign Up"/>
+        <Button layoutX="215.0" layoutY="366.0" mnemonicParsing="false" onAction="#changeToSignIn" text="Cancel"/>
+        <TextField fx:id="usernameField" layoutX="101.0" layoutY="136.0" promptText="Username" />
+        <PasswordField fx:id="passwordField" layoutX="101.0" layoutY="190.0" promptText="Password" />
+        <ChoiceBox fx:id="userTypeChoice" layoutX="104.0" layoutY="262.0" prefWidth="150.0" />
+        <Label fx:id="signUpLabel" alignment="CENTER" layoutY="342.0" prefHeight="17.0" prefWidth="293.0" />
+        <Label layoutX="108.0" layoutY="80.0" text="Sign Up Page">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="113.0" layoutY="234.0" text="Select your user type" />
+        <TextField fx:id="companyNameField" layoutX="101.0" layoutY="308.0" promptText="Company Name" />
+    </children>
+</AnchorPane>
